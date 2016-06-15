@@ -1,0 +1,38 @@
+# see http://about.travis-ci.org/docs/user/languages/php/ for more hints
+language: php
+
+# list any PHP version you want to test against
+php:
+  # using major version aliases
+  # aliased to a recent 5.5.x version
+  - 5.5
+  # aliased to a recent 5.6.x version
+  - 5.6
+  # aliased to a recent 7.x version
+  - 7.0
+  # aliased to a recent hhvm version
+   - hhvm
+
+# optionally specify a list of environments, for example to test different RDBMS
+env:
+  - DB=mysql
+
+# optionally set up exclutions and allowed failures in the matrix
+matrix:
+  allow_failures:
+    - php: 7.0
+    - php: hhvm
+
+# use the $DB env variable to determine the phpunit.xml to use
+script: phpunit tests/
+
+# Killing php server
+ - killall php
+
+# configure notifications (email, IRC, campfire etc)
+# notifications:
+# irc: "irc.freenode.org#yourfavouriteroomfortravis"
+# Customize when the notification emails are sent.
+notifications:
+    on_success: never
+    on_failure: always

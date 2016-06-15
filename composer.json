@@ -1,0 +1,34 @@
+{
+    "name": "HelloSlim3",
+    "description": "Yet Another Url Shortener",
+    "keywords": ["slimframework", "starter"],
+    "homepage": "https://github.com/napolux/helloslim3",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Francesco Napoletano",
+            "email": "napolux@gmail.com",
+            "homepage": "https://napolux.com/"
+        }
+    ],
+    "require-dev": {
+      "phake/phake": "2.*",
+      "guzzlehttp/guzzle": "~6.0"
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.4",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "slim/twig-view": "^2.1",
+        "slim/http-cache": "^0.3.0",
+        "tuupola/slim-basic-auth": "^2.0",
+        "slim/flash": "dev-master",
+        "doctrine/orm": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "HELLO\\": "src"
+        }
+    }
+}
