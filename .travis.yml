@@ -23,11 +23,18 @@ matrix:
     - php: 7.0
     - php: hhvm
 
+# execute any number of scripts before the test run, custom env's are available as variables
+before_script:
+  - composer self-update
+  - composer install --prefer-source --no-interaction --dev
+# starting local server for functional tests
+  - php -S 0.0.0.0:8080 -t public public/index.php &
+
+# omitting "script:" will default to phpunit
 # use the $DB env variable to determine the phpunit.xml to use
 script: phpunit tests/
 
-# Killing php server
- - killall php
+# after_script:
 
 # configure notifications (email, IRC, campfire etc)
 # notifications:
