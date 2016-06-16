@@ -7,8 +7,9 @@ If you use PHPUnit for tests, the ```/tests``` folder is there, just for you to 
 
 Here are some of the HelloSlim3 features...
 
-* Admin panel (ready to be used, with basic auth)
+* Admin panel (ready to be customized, with basic auth)
 * Bootstrap integration
+* Basic controller example
 
 ## Requirements
 
