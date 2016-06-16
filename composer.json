@@ -13,7 +13,8 @@
     ],
     "require-dev": {
       "phake/phake": "2.*",
-      "guzzlehttp/guzzle": "~6.0"
+      "guzzlehttp/guzzle": "~6.0", 
+      "phpunit/phpunit": "4.8.*"
     },
     "require": {
         "php": ">=5.5.0",
