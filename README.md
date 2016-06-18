@@ -31,6 +31,10 @@ To run HelloSlim3 you need:
 * Change admin username and password in `src/middleware.php`
 * Enjoy
 
+## TODO
+
+Complete the to-do list ;)
+
 Legal stuff
 -----------
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
