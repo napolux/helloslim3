@@ -21,7 +21,7 @@ class AdminHpController extends AbstractAdminController
     public function homepage(Request $request, Response $response, $args)
     {
         $body = $this->view->fetch('admin/pages/homepage.twig', [
-            'title'       => 'Admin Homepage',
+            'title' => 'Admin Homepage',
         ]);
 
         return $response->write($body);

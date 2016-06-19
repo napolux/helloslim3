@@ -47,11 +47,11 @@ $container['em'] = function ($c) {
 
 // Homepage Controller
 $container['HELLO\Controller\HomepageController'] = function ($c) {
-    return new HELLO\Controller\HomepageController($c->get('view'));
+    return new HELLO\Controller\HomepageController($c);
 };
 
 // Admin Homepage Controller
 $container['HELLO\Controller\AdminHpController'] = function ($c) {
-    return new HELLO\Controller\AdminHpController($c->get('view'));
+    return new HELLO\Controller\AdminHpController($c);
 };
 

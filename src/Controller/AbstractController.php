@@ -7,8 +7,9 @@ abstract class AbstractController
 {
     protected $view;
 
-    public function __construct(TwigViews $view)
+    public function __construct($c)
     {
-        $this->view      = $view;
+        /** @var TwigViews view */
+        $this->view = $c->get('view');
     }
 }
