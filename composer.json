@@ -1,7 +1,7 @@
 {
     "name": "HelloSlim3",
     "description": "Yet Another Url Shortener",
-    "keywords": ["slimframework", "starter"],
+    "keywords": ["slimframework", "starter", "twig","doctrine", "bootstrap"],
     "homepage": "https://github.com/napolux/helloslim3",
     "license": "MIT",
     "authors": [
