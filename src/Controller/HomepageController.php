@@ -10,6 +10,12 @@ use Slim\Http\Response;
  */
 class HomepageController extends AbstractController
 {
+    /**
+     * @param Request $request
+     * @param Response $response
+     * @param $args
+     * @return Response
+     */
     public function hp(Request $request, Response $response, $args)
     {
         $body = $this->view->fetch('website/pages/homepage.twig');

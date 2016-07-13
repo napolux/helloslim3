@@ -11,12 +11,10 @@ use Slim\Http\Response;
 class AdminHpController extends AbstractAdminController
 {
     /**
-     * Listing all the URLs, paginated
      * @param Request $request
      * @param Response $response
      * @param $args
      * @return Response
-     * @throws \Exception
      */
     public function homepage(Request $request, Response $response, $args)
     {
