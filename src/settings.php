@@ -11,7 +11,7 @@ return [
 
         // Monolog settings: where are the logs???
         'logger' => [
-            'name' => 'yaus',
+            'name' => 'helloslim3',
             'path' => __DIR__ . '/../logs/app.log',
         ],
 
@@ -29,8 +29,8 @@ return [
             'connection' => [
                 'driver'   => 'pdo_mysql',
                 'host'     => '127.0.0.1',
-                'dbname'   => 'yausdb',
-                'user'     => 'yaus',
+                'dbname'   => 'testdb',
+                'user'     => 'testuser',
                 'password' => 'password',
             ]
         ]
