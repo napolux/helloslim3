@@ -33,7 +33,7 @@ To run HelloSlim3 you need:
 
 ## TODO
 
-* Add some test cases for controller
+[X] Add some test cases for controller
 * Complete the to-do list ;)
 
 Legal stuff
