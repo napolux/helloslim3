@@ -9,7 +9,7 @@ Here are some of the HelloSlim3 features...
 
 * Admin panel (ready to be customized, with basic auth)
 * Bootstrap integration
-* Basic controller example (both web and API)
+* Basic controller example (both web `/` and API `/api`)
 * Basic tests examples
 
 ## Requirements
