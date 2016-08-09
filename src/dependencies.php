@@ -55,3 +55,8 @@ $container['HELLO\Controller\AdminHpController'] = function ($c) {
     return new HELLO\Controller\AdminHpController($c);
 };
 
+// API Controller
+$container['HELLO\Controller\ApiController'] = function ($c) {
+    return new HELLO\Controller\ApiController($c);
+};
+
