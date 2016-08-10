@@ -25,7 +25,7 @@ return [
                 'proxy_dir' =>  __DIR__.'/../cache/proxies',
                 'cache' => null,
             ],
-            // MySQL connection settings, change this!!!
+            // TODO: change your db credentials!
             'connection' => [
                 'driver'   => 'pdo_mysql',
                 'host'     => '127.0.0.1',
