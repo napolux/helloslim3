@@ -4,8 +4,6 @@ namespace HELLO\Tests;
 require __DIR__ . '/../vendor/autoload.php';
 
 use GuzzleHttp;
-use Symfony\Component\DomCrawler\Crawler;
-
 
 class ApiTest extends \PHPUnit_Framework_TestCase
 {
