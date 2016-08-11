@@ -1,14 +1,10 @@
 <?php
 // Application middleware
-
 // Authentication...
-// TODO: Please change your credentials to something more secure...
 $app->add(new \Slim\Middleware\HttpBasicAuthentication([
     "path" => ["/admin"],
     "realm" => "Administration Panel for HelloSlim3",
-    "users" => [
-        "admin" => "password" // CHANGE ME!
-    ],
+    "users" => $app->getContainer()->get('settings')['admin_users'],
     "error" => function ($request, $response, $arguments) {
         $data = [];
         $data["status"] = "error";

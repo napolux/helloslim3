@@ -32,7 +32,11 @@ return [
                 'dbname'   => 'testdb',
                 'user'     => 'testuser',
                 'password' => 'password',
-            ]
-        ]
+            ],
+        ],
+        // TODO: change your admin users!
+        'admin_users' => [
+            'admin' => 'password'
+        ],
     ],
 ];
