@@ -23,7 +23,12 @@ require __DIR__ . '/../src/dependencies.php';
 require __DIR__ . '/../src/middleware.php';
 
 // Register routes
-require __DIR__ . '/../src/routes.php';
+$routes = scandir(__DIR__ . '/../src/Routes/');
+foreach ($routes as $route) {
+    if (strpos($route, '.php')) {
+        require __DIR__ . '/../src/Routes/' . $route;
+    }
+}
 
 // Run app
 $app->run();
