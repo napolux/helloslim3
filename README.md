@@ -1,6 +1,6 @@
 # HelloSlim3 [![Build Status](https://travis-ci.org/napolux/helloslim3.svg?branch=master)](https://travis-ci.org/napolux/helloslim3)
 
-A starter kit for small PHP Projects containing the [Slim](http://www.slimframework.com/) microframework, [Twig](http://twig.sensiolabs.org/) as Template Engine and [Doctrine](http://www.doctrine-project.org/) as ORM.
+A boilerplate for small PHP Projects containing the [Slim](http://www.slimframework.com/) microframework, [Twig](http://twig.sensiolabs.org/) as Template Engine and [Doctrine](http://www.doctrine-project.org/) as ORM.
 If you use PHPUnit for tests, the ```/tests``` folder is there, just for you to use :P
 
 ## Features
