@@ -1,6 +1,7 @@
 <?php
 namespace HELLO\Controller;
 
+use Slim\Container;
 use Slim\Views\Twig as TwigViews;
 
 /**
@@ -12,7 +13,11 @@ abstract class AbstractController
     /** @var TwigViews view */
     protected $view;
 
-    public function __construct($c)
+    /**
+     * AbstractController constructor.
+     * @param Container $c
+     */
+    public function __construct(Container $c)
     {
         $this->view = $c->get('view');
     }
