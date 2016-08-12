@@ -5,8 +5,13 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use GuzzleHttp;
 
+/**
+ * Class ApiTest
+ * @package HELLO\Tests
+ */
 class ApiTest extends \PHPUnit_Framework_TestCase
 {
+    /** @var  GuzzleHttp\Client */
     protected $client;
 
     public function setUp()
