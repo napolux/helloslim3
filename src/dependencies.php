@@ -1,6 +1,5 @@
 <?php
 // Configuration for Slim Dependency Injection Container
-
 $container = $app->getContainer();
 
 // Flash messages
