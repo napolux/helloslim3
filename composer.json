@@ -27,7 +27,8 @@
         "tuupola/slim-basic-auth": "^2.0",
         "slim/flash": "dev-master",
         "doctrine/orm": "^2.5",
-        "symfony/dom-crawler": "^3.1"
+        "symfony/dom-crawler": "^3.1",
+        "vlucas/phpdotenv": "^2.3"
     },
     "autoload": {
         "psr-4": {
