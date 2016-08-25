@@ -1,4 +1,9 @@
 <?php
+
+/** @var \Dotenv\Dotenv $dotenv */
+$dotenv = new Dotenv\Dotenv(__DIR__ . "/..");
+$dotenv->load();
+
 return [
     'settings' => [
         // If you put HelloSlim3 in production, change it to false
@@ -28,15 +33,15 @@ return [
             // TODO: change your db credentials!
             'connection' => [
                 'driver'   => 'pdo_mysql',
-                'host'     => '127.0.0.1',
-                'dbname'   => 'testdb',
-                'user'     => 'testuser',
-                'password' => 'password',
+                'host'     => getenv('DB_HOST'),
+                'dbname'   => getenv('DB_NAME'),
+                'user'     => getenv('DB_USER'),
+                'password' => getenv('DB_PASS'),
             ],
         ],
         // TODO: change your admin users!
         'admin_users' => [
-            'admin' => 'password'
+            getenv('ADMIN_USER') => getenv('ADMIN_PASS')
         ],
     ],
 ];
