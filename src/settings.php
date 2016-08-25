@@ -1,7 +1,7 @@
 <?php
 
 /** @var \Dotenv\Dotenv $dotenv */
-$dotenv = new Dotenv\Dotenv(__DIR__ . "/..");
+$dotenv = new Dotenv\Dotenv(__DIR__ . "/..", (getenv("TRAVIS") == true) ? ".env.example" : ".env");
 $dotenv->load();
 
 return [
