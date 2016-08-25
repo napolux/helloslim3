@@ -26,11 +26,12 @@ To run HelloSlim3 you need:
 
 ## Setup
 
-* Launch local PHP Server from HelloSlim3 folder `php -S 0.0.0.0:8080 -t public public/index.php`
 * Launch SASS watcher `sass --watch assets/sass/:public/css --style compressed`
+* Create a `.env` file in the root of your project. Take a look at `.env.example`
+* Change database connection credentials in `.env`
+* Change admin username and password in `.env`
+* Launch local PHP Server from HelloSlim3 folder `php -S 0.0.0.0:8080 -t public public/index.php`
 * Go and visit `http://localhost:8080`
-* Change database connection credentials in `src/settings.php`
-* Change admin username and password in `src/middleware.php`
 * Enjoy
 
 ## TODO
