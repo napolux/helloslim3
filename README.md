@@ -34,6 +34,11 @@ To run HelloSlim3 you need:
 * Go and visit `http://localhost:8080`
 * Enjoy
 
+## How to launch tests locally
+
+* Copy `.env.example` into `.env`
+* Run `phpunit tests/`
+
 ## TODO
 
 * Add some test cases for controller
