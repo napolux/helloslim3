@@ -37,6 +37,7 @@ To run HelloSlim3 you need:
 ## How to launch tests locally
 
 * Copy `.env.example` into `.env`
+* Change credentials in `.env` according to your setup
 * Run `phpunit tests/`
 
 ## TODO
