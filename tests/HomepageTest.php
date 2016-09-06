@@ -22,7 +22,8 @@ class HomepageTest extends \PHPUnit_Framework_TestCase
         ]);
     }
 
-    public function testHomepageIsLoadedAndGives200() {
+    public function testHomepageIsLoadedAndGives200()
+    {
         $response = $this->client->request('GET', '/');
         $this->assertEquals(200, $response->getStatusCode());
 
@@ -31,6 +32,6 @@ class HomepageTest extends \PHPUnit_Framework_TestCase
         $crawler = new Crawler($response->getBody()->getContents());
 
         $filter = $crawler->filter('h1');
-        $this->assertEquals('Hello, Slim 3!', $filter->text(),'Error');
+        $this->assertEquals('Hello, Slim 3!', $filter->text(), 'Error');
     }
 }

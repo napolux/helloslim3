@@ -21,7 +21,8 @@ class ApiTest extends \PHPUnit_Framework_TestCase
         ]);
     }
 
-    public function testApiIsLoadedAndGives200() {
+    public function testApiIsLoadedAndGives200()
+    {
         $data = $this->makeRequestCheckStatusAndReturnData("/api");
         $this->assertEquals($data['thisis'], "an api response", 'API is broken!');
     }
