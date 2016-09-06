@@ -30,7 +30,6 @@ return [
                 'proxy_dir' =>  __DIR__.'/../cache/proxies',
                 'cache' => null,
             ],
-            // TODO: change your db credentials!
             'connection' => [
                 'driver'   => 'pdo_mysql',
                 'host'     => getenv('DB_HOST'),
@@ -39,7 +38,6 @@ return [
                 'password' => getenv('DB_PASS'),
             ],
         ],
-        // TODO: change your admin users!
         'admin_users' => [
             getenv('ADMIN_USER') => getenv('ADMIN_PASS')
         ],
