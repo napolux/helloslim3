@@ -17,9 +17,9 @@
 
     },
     "require": {
-        "php": ">=5.5.0",
+        "php": ">=5.6.0",
         "slim/slim": "^3.5",
-        "slim/php-view": "^2.0",
+        "slim/php-view": "^2.2.0",
         "monolog/monolog": "^1.17",
         "slim/twig-view": "^2.1",
         "slim/http-cache": "^0.3.0",
